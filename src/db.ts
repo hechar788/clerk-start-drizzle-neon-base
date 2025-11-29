@@ -1,5 +1,7 @@
 import { neon } from '@neondatabase/serverless'
 
+export { db } from './db/index.ts'
+
 let client: ReturnType<typeof neon>
 
 export async function getClient() {
